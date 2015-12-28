@@ -31,6 +31,7 @@ module CC
       end
 
       def say(message)
+        puts "TERMINAL SAY: #{message}"
         logger.info(message)
       end
 

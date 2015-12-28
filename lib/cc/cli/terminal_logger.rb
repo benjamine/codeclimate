@@ -30,6 +30,7 @@ module CC
       private
 
       def write(message)
+        puts "DEBUG: logging #{message.inspect}"
         if message.level >= level
           stream_for_level(message.level).puts(message.message)
         end
